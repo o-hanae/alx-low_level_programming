@@ -8,6 +8,7 @@
 void print_diagonal(int n)
 {
 	int i;
+	int y;
 
 	if (n <= 0)
 	{
@@ -17,15 +18,19 @@ void print_diagonal(int n)
 	{
 		for (i = 1; i <= n; i++)
 		{
-			if (i == n)
+			for (y = 1; y <= i; y++)
 			{
-				_putchar('\\');
+				if (i == n)
+				{
+					_putchar('\\');
+					_putchar('\n');
+				}
+				else
+				{
+					_putchar(' ');
+				}
 			}
-			else
-			{
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
