@@ -1,13 +1,17 @@
 #include "main.h"
 
 /**
- * mul- check the multip of two number.
- * @a:character.
- * @b:charact.
- * Return:the result.
+ * print_numbers - checks for checks for a digit (0 through 9).
+ *
+ * Return: Always 0.
  */
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int z;
 
+	for (z = 0; z <= 9; z++)
+	{
+		_putchar(z);
+	}
+	_putchar('\n');
 }
