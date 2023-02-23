@@ -16,19 +16,11 @@ void print_square(int size)
 	{
 		for (i = 1; i <= size; i++)
 		{
-			putchar('\n');
 			for (j = 1; j <= size; j++)
 			{
-				if (j == i)
-				{
-					putchar('#');
-				}
-				else
-				{
-					putchar('#');
-				}
+				putchar('#');
 			}
+			_putchar('\n');
 		}
-		putchar('\n');
 	}
 }
