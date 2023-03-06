@@ -1,24 +1,17 @@
 #include "main.h"
-
 /**
- * _strncat-Concatenates two strings using at most
- * @dest:carachter
- * @src:carachter
- * @n:int
- * Return:dest
+ * _memset - memset function
+ * @s: start point of string to change
+ * @b: value that will replace
+ * @n: number of bytes to change
+ * Return: changed pointer
  */
-char *_strncat(char *dest, char *src, int n)
-{
-	int i = 0;
-	int dest_len = 0;
 
-	while (dest[i++])
-	{
-		dest_len++;
-	}
-	for (i = 0; src[i] && i < n; i++)
-	{
-		dest[dest_len++] = src[i];
-	}
-	return (dest);
+char *_memset(char *s, char b, unsigned int n)
+{
+	char *p = s;
+
+	for (; n != 0; p++, n--)
+		*p = b;
+	return (s);
 }
