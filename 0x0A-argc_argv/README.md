@@ -1,1 +1,1 @@
-readme of argument argc and argv
+fredme of argc argv
